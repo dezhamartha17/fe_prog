@@ -2,6 +2,7 @@ import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "../temp/table.js";
 export function isiTablePresensi(results) {
+    console.log(results);
     results.forEach(isiRow);
 }
 function isiRow(value) {
@@ -12,6 +13,7 @@ function isiRow(value) {
             .replace("#LOKASI#", value.location)
             .replace("#STATUS#", value.checkin)
             .replace("#HARIKERJA#", value.biodata.hari_kerja)
+            .replace("#JAMKERJA#", value.biodata.hari_kerja)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);

@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../shuffle-for-tailwind.png">
   <script src="../js/main.js"></script>
   <script type="module" src="../js/fetch.js"></script>
+  <script type="module" src="../js/table.js"></script>
 </head>
 
 <body class="antialiased bg-body text-body font-body">
@@ -272,7 +273,7 @@
                 <div class="mb-6 border border-coolGray-100"></div>
                 <div class="overflow-hidden border border-coolGray-100 rounded-md shadow-dashboard">
                   <div class="overflow-x-auto">
-                    <table class="w-full">
+                    <table class="w-full" id="iniTabel">
                       <tr class="whitespace-nowrap h-11 bg-coolGray-50 bg-opacity-80 border-b border-coolGray-100">
                         <th class="px-4 font-semibold text-xs text-coolGray-500 uppercase text-left">
                           <div class="flex items-center">
@@ -298,7 +299,7 @@
                       </tr>
 
                       <!-- ISI TABEL DARI SINI (BUAT pada FILE tabel.js) -->
-                      <tr class="h-18 border-b border-coolGray-100">
+                      <!-- <tr class="h-18 border-b border-coolGray-100">
                         <th class="whitespace-nowrap px-4 bg-white text-left">
                           <div class="flex items-center -m-2">
                             <div class="w-auto p-2">
@@ -339,7 +340,7 @@
                               fill="#WARNA#"></path>
                           </svg>
                         </th>
-                      </tr>
+                      </tr> -->
                       <!-- ISI TABEL SAMPAI DISINI (BUAT pada FILE tabel.js) -->
 
                     </table>

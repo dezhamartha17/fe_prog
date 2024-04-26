@@ -13,9 +13,9 @@ function isiRow(value) {
             .replace("#LOKASI#", value.location)
             .replace("#STATUS#", value.checkin)
             .replace("#HARIKERJA#", value.biodata.hari_kerja)
-            .replace("#JAMKERJA#", value.biodata.jam_kerja[0].durasi)
-            .replace("#JAMMASUK#", value.biodata.jam_kerja.jam_masuk)
-            .replace("#JAMKELUAR#", value.biodata.jam_kerja.jam_keluar)
+            .replace("#JAMKERJA#", value.biodata.jam_kerja[0].durasi || 'Durasi tidak tersedia')
+            .replace("#JAMMASUK#", value.biodata.jam_kerja[0].jam_masuk || 'Jam Masuk tidak tersedia')
+            .replace("#JAMKELUAR#", value.biodata.jam_kerja[0].jam_keluar || 'Jam Keluar tidak tersedia')
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
